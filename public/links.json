@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "networks": {
+    "openfab_hub": {
+      "fab_quoter": "https://peer-fab.doaipm.com/fab_quoter"
+    }
+  }
+}

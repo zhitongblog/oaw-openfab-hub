@@ -1,0 +1,63 @@
+{
+  "protocolVersion": "0.3",
+  "name": "OpenFab Mesh — Open Agentic Hardware & Supply-Chain Hub",
+  "description": "Worldwide Agentic Web MVP Profile 0.3 reference implementation demonstrating browser-local multi-agent orchestration, strict peer origin consent, default-deny sly_data isolation, BYOK inference, confirmation-gated site actions, and public MCP JSON-RPC 2.0 interoperability.",
+  "url": "https://agentweb.doaipm.com",
+  "manifestUrl": "https://agentweb.doaipm.com/agent-manifest.json",
+  "mcpEndpoint": "https://agentweb.doaipm.com/mcp",
+  "provider": {
+    "organization": "OpenFab Mesh (DO AI PM)",
+    "url": "https://agentweb.doaipm.com"
+  },
+  "capabilities": {
+    "browserLocalRuntime": true,
+    "crossOriginPeerComposition": true,
+    "explicitOriginConsent": true,
+    "slyDataDefaultDeny": true,
+    "byokRouterIsolation": true,
+    "confirmationGatedWriteActions": true,
+    "mcpJsonRpc": true
+  },
+  "skills": [
+    {
+      "id": "audit_bom_dfm",
+      "name": "PCB & BOM DFM Auditor",
+      "description": "Read-only IPC-2221B/IPC-A-610 manufacturability scoring and risk audit.",
+      "tags": [
+        "hardware",
+        "pcb",
+        "dfm"
+      ]
+    },
+    {
+      "id": "check_compliance_policy",
+      "name": "Regulatory & Export Compliance Arbiter",
+      "description": "Read-only RoHS-3, REACH SVHC, and wireless CE/FCC compliance checks.",
+      "tags": [
+        "compliance",
+        "rohs",
+        "reach"
+      ]
+    },
+    {
+      "id": "reserve_bom_lot",
+      "name": "Confirmation-Gated BOM Lot Reservation",
+      "description": "Write action protected by explicit interactive user confirmation and signed Action Receipt.",
+      "tags": [
+        "supply-chain",
+        "write-action",
+        "receipt"
+      ]
+    },
+    {
+      "id": "fab_quoter",
+      "name": "Linked Cross-Origin Peer Quoter",
+      "description": "Delegates SMT/PCB volume pricing to peer-fab.doaipm.com after explicit origin consent.",
+      "tags": [
+        "cross-origin",
+        "peer",
+        "smt"
+      ]
+    }
+  ]
+}

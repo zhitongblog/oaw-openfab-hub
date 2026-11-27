@@ -1,0 +1,7 @@
+name = "oaw-openfab-hub"
+main = "worker/index.js"
+compatibility_date = "2026-11-01"
+
+routes = [
+  { pattern = "agentweb.doaipm.com", custom_domain = true }
+]

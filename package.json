@@ -1,0 +1,13 @@
+{
+  "name": "oaw-openfab-hub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "OpenFab Mesh — Open Agentic Hardware & Supply-Chain Hub conforming 100% to Worldwide Agentic Web MVP Profile 0.3",
+  "scripts": {
+    "sync": "node scripts/sync-assets.mjs",
+    "check": "node --check src/artifacts.js && node --check src/runtime.js && node --check src/runtime-source.js && node --check src/ui.js && node --check worker/index.js && node --check test/interoperability.test.js",
+    "test": "node --test test/interoperability.test.js",
+    "deploy": "wrangler deploy"
+  }
+}
